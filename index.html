@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #eaf4f8;
+    }
+
+    .navbar {
+      background-color: #333399;
+      color: #fff;
+    }
+
+    .navbar-brand {
+      color: #fff;
+    }
+
+    .flexbox-container {
+      display: flex;
+      align-items: stretch;
+    }
+
+    .flexbox-item {
+      flex: 1;
+      padding: 10px;
+    }
+
+    .medium-image {
+      height: 100%;
+      width: auto;
+      max-width: 100%;
+    }
+
+    .text-paragraph {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .spacer {
+      margin-bottom: 50px;
+    }
+
+
+    .footer {
+      background-color: #3399cc;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-img-top {
+      height: 600px;
+      object-fit: cover;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      margin: 10px;
+      width: 300px;
+      height: 200px;
+      transition: transform 0.3s;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.1);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Software Engineering</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="jumbotron text-center">
+    <h1>Department of Software Engineering</h1>
+    <h2>Islamia University of Bahawalpur</h2>
+    <a href="#" class="btn btn-primary">About</a>
+    <a href="#" class="btn btn-primary">Contact</a>
+  </section>
+
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Discipline</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus lacus at nunc
+              dictum, ut mollis enim eleifend.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Integerity</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus lacus at nunc
+              dictum, ut mollis enim eleifend.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Cooperation</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus lacus at nunc
+              dictum, ut mollis enim eleifend.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Improvement</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus lacus at nunc
+              dictum, ut mollis enim eleifend.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Flexible</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus lacus at nunc
+              dictum, ut mollis enim eleifend.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 class="text-center mt-5">Our Catalog</h1>
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="./images/image1.jpeg" alt="Image 1">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/image2.jpeg" alt="Image 2">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/image3.jpeg" alt="Image 3">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/image4.jpeg" alt="Image 4">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/image5.jpeg" alt="Image 5">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/image6.jpeg" alt="Image 6">
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Software Engineering. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
